@@ -63,3 +63,15 @@ input{
     font-size: 1rem;
     font-weight: 500;
 }
+@media screen and (max-width: 720px) {
+   .searchfriend{
+    margin-left: 3rem;
+   }
+   .searchfriend_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+   }
+
+ 
+ }
