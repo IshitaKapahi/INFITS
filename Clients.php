@@ -28,6 +28,11 @@ include('event_calender.php');
                     <div class="add_set"> <span>Add Clients</span></div>   
                 </div>
                 <div class="add_set_client">
+                    <div><button id="btn1"><span class="material-symbols-outlined">settings</span></button> </div>
+                    <div class="add_set"> <span>Set Goals</span></div>   
+                </div>
+                
+                <div class="add_set_client">
                     <div><button id="btn1"><span class="material-symbols-outlined">notification_add</span></button> </div>
                     <div class="add_set"> <span>Set Reminders</span></div>   
                 </div>
