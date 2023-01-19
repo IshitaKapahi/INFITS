@@ -1,9 +1,13 @@
+.detailed_progress_container1{
+    display: flex;
+}
 .container1_leftside{
-    margin-left: 18rem;
+    margin-left: 5rem;
     margin-top: 2rem;
 }
 .search_client{ 
     margin: 1.5rem;
+    margin-top: 2.5rem;
     width: 25rem; 
     color: #ACACAC;   
     background-color:white;
@@ -30,7 +34,7 @@
     border: none;
     font-size: larger;
     font-weight: 500;
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
     padding: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -38,4 +42,103 @@
 }
 #btn2:hover{
     border-bottom:0.25rem solid #4B9AFB; 
+}
+.container1_rightside{
+    margin-left: 14rem;
+}
+/* Calender css starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.wrapper{
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.12);
+  margin-top: 0.5rem;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+ 
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 1px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.weeks{
+    margin-bottom:0%;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(90% / 7);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.days li.active::before{
+  background: #a6b0fc;
+}
+.days li:not(.active):hover::before{
+  border: 2px solid #7282FB;
 }

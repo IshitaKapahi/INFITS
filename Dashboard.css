@@ -4,7 +4,8 @@
     font-family: poppins;
     display: flex;
     flex-direction: column;
-    gap: 1rem;  
+    gap: 1rem;
+    margin-bottom: 1rem; 
 }
 .dashboard_comtainer1{
     display: flex;
@@ -100,6 +101,9 @@
 .dashboard_container3{
     display: flex;
 }
+.dashboard_container4{
+    margin-left: 3rem;
+}
 .container4_wrapper1{
     display: flex;
     gap: 2rem;
@@ -114,6 +118,7 @@
 .symbols{
     display: flex;
 }
+
 .container4_wrapper2{
     display: flex;
     background-color: #f8f6f6;
@@ -188,6 +193,23 @@
 .tasklist_wrapper3{
     margin-left: 6rem;
 }
+.meassages{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    background-color: #f8f6f6;
+    border: 1px solid  #e4e1e1;
+
+}
+
+.mobileview_clientprogress{
+    
+    display: none;
+}
+.steps{
+  margin-top: 1rem;
+}
 
 @media screen and (max-width: 720px) {
     .dashboard_comtainer1{
@@ -229,8 +251,17 @@
     .tasklist_wrapper3{
         margin-left: 0.5rem;
     }
-    #tasklist{
-        display: none;
+   
+    .mobileview_clientprogress{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: 0 4px 7px rgba(0,0,0,0.12);
+        border-radius: 0.7rem;
+        padding: 1rem;
+        width: 260px;
+        height: 283px;
+        margin-left: 2rem;
     }
    
 }
