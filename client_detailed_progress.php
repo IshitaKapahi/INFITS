@@ -24,14 +24,12 @@ include('event_calender.php');
                     <div><button id="btn1"><span class="material-symbols-outlined">search</span></button> </div>
                     <div>&nbsp&nbsp&nbsp&nbsp <input type="text" name="search_client" placeholder="Search Clients" class="seach_clients_text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>   
                 </div>
-                <div class="track_buttons">
-                    <button id="btn2">On-Track</button>
-                    <button id="btn2">Off-Track</button>
-                </div>
+                
                 
             </div>
+           
 
-
+<!---------------callender code--------------->
 
             <div class="container1_rightside">
                 <div class="wrapper">
@@ -119,10 +117,201 @@ include('event_calender.php');
             </div>
             
         </div>
+        
+<!--------------------------------------- webview of progress details--------------------------------------------------->
 
-        <div class="detailed_progress_container2">
+        <div class="webview_progressdetails">
+                    <div class="track_buttons">
+                        <button id="btn2" onclick="myFunction()">On-Track</button>
+                        <button id="btn2" onclick="myFunction2()">Off-Track</button>
+                    </div>
+
+                    <script>
+                    function myFunction() {
+                    var x = document.getElementById("container2");
+                    var y = document.getElementById("container3");
+                    
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    }
+                    }
+                    function myFunction2() {
+                    var x = document.getElementById("container3");
+                    var y = document.getElementById("container2");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    }
+                    }
+                </script>
+
+
+
+
+            <div class="detailed_progress_container2" id="container2">
+                <div class="container2_wrapper1">
+                <div style="margin-top:0.5rem"><span><img src="images/ronald.jpg" style="width:2rem; background-color:#f8f6f6;border-radius:1rem"> Ronald Richards</span></a></span></div>
+                <div class="info"><span>Steps</span> <div class="symbols"><div style="color:#FDA184"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >4855 steps</span></div></div></div>
+                <div class="info"><span>Heart Rate</span> <div class="symbols"><div style="color:#F080B2"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >150 bpm</span></div></div></div>
+                <div class="info"><span>Weight</span> <div class="symbols"><div style="color:#7B979D"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >1.6kg</span></div></div></div>
+                <div class="info"><span>Sleep</span> <div class="symbols"><div style="color:#7853E3"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >7 hrs</span></div></div></div>
+                
+
+                </div>
+                
+            </div>
+
+
+            
+            <div class="detailed_progress_container2" id="container3">
+                <div class="container2_wrapper1">
+                <div style="margin-top:0.5rem"><span><img src="images/ronald.jpg" style="width:2rem; background-color:#f8f6f6;border-radius:1rem"> Ronald Richards</span></a></span></div>
+                <div class="info"><span>Steps</span> <div class="symbols"><div style="color:#FDA184"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >2356 steps</span></div></div></div>
+                <div class="info"><span>Heart Rate</span> <div class="symbols"><div style="color:#F080B2"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >150 bpm</span></div></div></div>
+                <div class="info"><span>Weight</span> <div class="symbols"><div style="color:#7B979D"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >1.6kg</span></div></div></div>
+                <div class="info"><span>Sleep</span> <div class="symbols"><div style="color:#7853E3"><span class="material-symbols-outlined" style="font-size:2rem;font-weight:600">line_end</span></div><div style="margin-top:0.3rem"><span >7 hrs</span></div></div></div>
+                
+
+                </div>
+                
+            </div>
+
+
             
         </div>
+
+
+
+
+
+        <!--------------------------------------- mobview of progress details--------------------------------------------------->
+
+        <div class="mobview_progressdetails">
+                    <div class="track_buttons">
+                        <button id="btn2" onclick="myFunction3()">On-Track</button>
+                        <button id="btn2" onclick="myFunction4()">Off-Track</button>
+                    </div>
+
+                    <script>
+                    function myFunction3() {
+                    var x = document.getElementById("container4");
+                    var y = document.getElementById("container5");
+                    
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    }
+                    }
+                    function myFunction4() {
+                    var x = document.getElementById("container5");
+                    var y = document.getElementById("container4");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    }
+                    }
+                </script>
+
+
+            <div class="mobview_container1" id="container4">
+                    <div class="mob_container1_wrapper1" >
+                            <span><a href="" style=" color:black;font-weight:500; border:none; margin-top:1rem;background-color:white; margin-left:1rem"><span><img src="images/ronald.jpg" style="width:2rem;border-radius:1rem"> Ronald Richards</span></a></span>
+                            <div class="row1" style="display:flex ; gap:2rem ">
+                                    <div class="steps">
+                                        <div class="symbols">
+                                        <div style="color:#F6A682"><span class="material-symbols-outlined">footprint</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Steps</span></div></div>
+                                        <span style="font-size:0.9rem;color:#454545">5256 steps</span>
+                                    </div>
+                                    <div class="steps">
+                                        <div class="symbols">
+                                        <div style="color:#EF80B2"><span class="material-symbols-outlined">monitor_heart</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Heart Rate</span></div></div>
+                                        <span style="font-size:0.9rem;color:#454545">150 bpm</span>
+                                    </div>
+                            </div>
+
+                            <div class="row2" style="display:flex ; gap:2rem">
+                                    <div class="steps">
+                                        <div class="symbols">
+                                        <div style="color:#788F96"><span class="material-symbols-outlined">weight</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Weight</span></div></div>
+                                        <span style="font-size:0.9rem;color:#454545">1.6 kg</span>
+                                    </div>
+                                    <div class="steps">
+                                        <div class="symbols">
+                                        <div style="color:#7550E2"><span class="material-symbols-outlined">bedtime</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Sleep</span></div></div>
+                                        <span style="font-size:0.9rem;color:#454545">7 hrs.</span>
+                                    </div>
+                            </div>
+
+
+
+
+            
+                     </div>
+                        
+            </div>
+
+            <div class="mobview_container1" id="container5">
+                    <div class="mob_container1_wrapper1" >
+                                    <span><a href="" style=" color:black;font-weight:500; border:none; margin-top:1rem;background-color:white; margin-left:1rem"><span><img src="images/ronald.jpg" style="width:2rem;border-radius:1rem"> Ronald Richards</span></a></span>
+                                    <div class="row1" style="display:flex ; gap:2rem ">
+                                            <div class="steps">
+                                                <div class="symbols">
+                                                <div style="color:#F6A682"><span class="material-symbols-outlined">footprint</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Steps</span></div></div>
+                                                <span style="font-size:0.9rem;color:#454545">2356 steps</span>
+                                            </div>
+                                            <div class="steps">
+                                                <div class="symbols">
+                                                <div style="color:#EF80B2"><span class="material-symbols-outlined">monitor_heart</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Heart Rate</span></div></div>
+                                                <span style="font-size:0.9rem;color:#454545">150 bpm</span>
+                                            </div>
+                                    </div>
+
+                                    <div class="row2" style="display:flex ; gap:2rem">
+                                            <div class="steps">
+                                                <div class="symbols">
+                                                <div style="color:#788F96"><span class="material-symbols-outlined">weight</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Weight</span></div></div>
+                                                <span style="font-size:0.9rem;color:#454545">1.6 kg</span>
+                                            </div>
+                                            <div class="steps">
+                                                <div class="symbols">
+                                                <div style="color:#7550E2"><span class="material-symbols-outlined">bedtime</span></div><div style="margin-top:0.2rem; font-weight:500"><span>Sleep</span></div></div>
+                                                <span style="font-size:0.9rem;color:#454545">7 hrs.</span>
+                                            </div>
+                                    </div>
+
+
+
+
+            
+                     </div>
+
+            
+                
+            </div>
+
+
+
+            
+        </div>
+
+
+
+
+
+        
+
+
+
+
         
     </div>
     
